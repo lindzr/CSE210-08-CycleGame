@@ -4,9 +4,9 @@ using System;
 namespace Unit05.Game.Casting
 {
     /// <summary>
-    /// <para>A tasty item that snakes like to eat.</para>
+    /// <para>Keeps score.</para>
     /// <para>
-    /// The responsibility of Food is to select a random position and points that it's worth.
+    /// The responsibility of Score is to add points when the snake eats food.
     /// </para>
     /// </summary>
     public class Score : Actor
@@ -14,7 +14,7 @@ namespace Unit05.Game.Casting
         private int points = 0;
 
         /// <summary>
-        /// Constructs a new instance of an Food.
+        /// Constructs a new instance of Score.
         /// </summary>
         public Score()
         {
