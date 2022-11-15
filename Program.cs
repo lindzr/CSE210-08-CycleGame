@@ -20,7 +20,8 @@ namespace Unit05
             // create the cast
             Cast cast = new Cast();
             cast.AddActor("food", new Food());
-            cast.AddActor("snake", new Snake());
+            cast.AddActor("playerOne", new Snake());
+            cast.AddActor("playerTwo", new Snake());
             cast.AddActor("score", new Score());
 
             // create the services
