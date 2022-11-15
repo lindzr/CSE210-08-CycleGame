@@ -1,3 +1,13 @@
+# CSE210-08-CycleGame
+
+Created by Lindsay Munns munnsli@byui.edu, Brooklyn Sowards brooklvk@byui.edu, and Elena Leon elenal63@byui.edu
+
+Classes required : Actor, Cast, Color, Food, Point, Score, Snake, Director, Action, ControlActorsAction, DrawActorsAction, HandleCollisionsAction, MoveActorsAction, Script, KeyboardService, Constants
+
+
+
+Required software: Visual Studio Code, C# extension, Raylib
+
 # Snake
 
 Eat as much fruit as you can before you eat yourself!
