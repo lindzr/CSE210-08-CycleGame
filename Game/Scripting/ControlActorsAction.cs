@@ -13,7 +13,8 @@ namespace Unit05.Game.Scripting
     public class ControlActorsAction : Action
     {
         private KeyboardService keyboardService;
-        private Point direction = new Point(Constants.CELL_SIZE, 0);
+        private Point direction1 = new Point(Constants.CELL_SIZE, 0);
+        private Point direction2 = new Point(Constants.CELL_SIZE, 0);
 
         /// <summary>
         /// Constructs a new instance of ControlActorsAction using the given KeyboardService.
@@ -31,58 +32,58 @@ namespace Unit05.Game.Scripting
             // left
             if (keyboardService.IsKeyDown("a"))
             {
-                direction = new Point(-Constants.CELL_SIZE, 0);
+                direction1 = new Point(-Constants.CELL_SIZE, 0);
             }
 
             // right
             if (keyboardService.IsKeyDown("d"))
             {
-                direction = new Point(Constants.CELL_SIZE, 0);
+                direction1 = new Point(Constants.CELL_SIZE, 0);
             }
 
             // up
             if (keyboardService.IsKeyDown("w"))
             {
-                direction = new Point(0, -Constants.CELL_SIZE);
+                direction1 = new Point(0, -Constants.CELL_SIZE);
             }
 
             // down
             if (keyboardService.IsKeyDown("s"))
             {
-                direction = new Point(0, Constants.CELL_SIZE);
+                direction1 = new Point(0, Constants.CELL_SIZE);
             }
 
             Snake snake1 = (Snake)cast.GetFirstActor("snake1");
-            snake1.TurnHead(direction);
+            snake1.TurnHead(direction1);
 
             //Then the letters I, J, K L control snake2 
 
             // left
             if (keyboardService.IsKeyDown("j"))
             {
-                direction = new Point(-Constants.CELL_SIZE, 0);
+                direction2 = new Point(-Constants.CELL_SIZE, 0);
             }
 
             // right
             if (keyboardService.IsKeyDown("l"))
             {
-                direction = new Point(Constants.CELL_SIZE, 0);
+                direction2 = new Point(Constants.CELL_SIZE, 0);
             }
 
             // up
             if (keyboardService.IsKeyDown("i"))
             {
-                direction = new Point(0, -Constants.CELL_SIZE);
+                direction2 = new Point(0, -Constants.CELL_SIZE);
             }
 
             // down
             if (keyboardService.IsKeyDown("k"))
             {
-                direction = new Point(0, Constants.CELL_SIZE);
+                direction2 = new Point(0, Constants.CELL_SIZE);
             }
 
             Snake snake2 = (Snake)cast.GetFirstActor("snake2");
-            snake2.TurnHead(direction);
+            snake2.TurnHead(direction2);
 
         }
     }

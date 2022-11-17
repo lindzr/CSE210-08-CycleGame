@@ -53,14 +53,14 @@ namespace Unit05.Game.Scripting
                 int points = food.GetPoints();
                 snake1.GrowTail(points);
                 score1.AddPoints(points);
-                food.Reset();
+                // food.Reset();
             }
             if (snake2.GetHead().GetPosition().Equals(food.GetPosition()))
             {
                 int points = food.GetPoints();
                 snake2.GrowTail(points);
                 score2.AddPoints(points);
-                food.Reset();
+                // food.Reset();
             }
         }
 
