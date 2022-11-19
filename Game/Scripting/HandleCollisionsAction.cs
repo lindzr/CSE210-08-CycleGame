@@ -71,8 +71,8 @@ namespace Unit05.Game.Scripting
             //     // food.Reset();
             // }
 
-            snake1.GrowTail(1);
-            snake2.GrowTail(1);
+            //snake1.GrowTail(1);
+            //snake2.GrowTail(1);
         }
 
         /// <summary>
