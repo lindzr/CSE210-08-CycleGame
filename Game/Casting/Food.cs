@@ -11,7 +11,8 @@ namespace Unit05.Game.Casting
     /// </summary>
     public class Food : Actor
     {
-        private int points = 0;
+        private int points1 = 0;
+        private int points2 = 0;
 
         /// <summary>
         /// Constructs a new instance of an Food.
@@ -27,9 +28,14 @@ namespace Unit05.Game.Casting
         /// Gets the points this food is worth.
         /// </summary>
         /// <returns>The points.</returns>
-        public int GetPoints()
+        public int GetPoints1()
         {
-            return points;
+            return points1;
+        }
+
+        public int GetPoints2()
+        {
+            return points2;
         }
 
         /// <summary>
@@ -38,7 +44,8 @@ namespace Unit05.Game.Casting
         // public void Reset()
         // {
         //     Random random = new Random();
-        //     points = random.Next(9);
+        //     points1 = random.Next(9);
+        //     points2 = random.Next(9);
         //     int x = random.Next(Constants.COLUMNS);
         //     int y = random.Next(Constants.ROWS);
         //     Point position = new Point(x, y);

@@ -11,24 +11,32 @@ namespace Unit05.Game.Casting
     /// </summary>
     public class Score : Actor
     {
-        private int points = 0;
+        private int points1 = 0;
+        private int points2 = 0;
 
         /// <summary>
         /// Constructs a new instance of Score.
         /// </summary>
         public Score()
         {
-            AddPoints(0);
+            AddPoints1(0);
+            AddPoints2(0);
         }
 
         /// <summary>
         /// Adds the given points to the score.
         /// </summary>
         /// <param name="points">The points to add.</param>
-        public void AddPoints(int points)
+        public void AddPoints1(int points1)
         {
-            this.points += points;
-            SetText($"Player One: {this.points}");
+            this.points1 += points1;
+            SetText($"Player One: {this.points1}");
+        }
+
+        public void AddPoints2(int points2)
+        {
+            this.points2 += points2;
+            SetText($"Player Two: {this.points2}");
         }
     }
 }

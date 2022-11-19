@@ -54,22 +54,25 @@ namespace Unit05.Game.Scripting
             Snake snake2 = (Snake)cast.GetFirstActor("snake2");
             Score score1 = (Score)cast.GetFirstActor("score1");
             Score score2 = (Score)cast.GetFirstActor("score2");
-            Food food = (Food)cast.GetFirstActor("food");
+            //Food food = (Food)cast.GetFirstActor("food");
             
-            if (snake1.GetHead().GetPosition().Equals(food.GetPosition()))
-            {
-                int points = food.GetPoints();
-                snake1.GrowTail(points);
-                score1.AddPoints(points);
-                // food.Reset();
-            }
-            if (snake2.GetHead().GetPosition().Equals(food.GetPosition()))
-            {
-                int points = food.GetPoints();
-                snake2.GrowTail(points);
-                score2.AddPoints(points);
-                // food.Reset();
-            }
+            // if (snake1.GetHead().GetPosition().Equals(food.GetPosition()))
+            // {
+            //     int points1 = food.GetPoints1();
+            //     snake1.GrowTail(points1);
+            //     score1.AddPoints1(points1);
+            //     // food.Reset();
+            // }
+            // if (snake2.GetHead().GetPosition().Equals(food.GetPosition()))
+            // {
+            //     int points2 = food.GetPoints2();
+            //     snake2.GrowTail(points2);
+            //     score2.AddPoints2(points2);
+            //     // food.Reset();
+            // }
+
+            snake1.GrowTail(1);
+            snake2.GrowTail(1);
         }
 
         /// <summary>
