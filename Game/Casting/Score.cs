@@ -30,13 +30,13 @@ namespace Unit05.Game.Casting
         public void AddPoints1(int points1)
         {
             this.points1 += points1;
-            SetText($"Player One: {this.points1}");
+            SetText($"{this.points1}");
         }
 
         public void AddPoints2(int points2)
         {
             this.points2 += points2;
-            SetText($"Player Two: {this.points2}");
+            SetText($"{this.points2}");
         }
     }
 }
