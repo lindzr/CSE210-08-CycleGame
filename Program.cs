@@ -27,7 +27,7 @@ namespace Unit05
 
             // create the services
             KeyboardService keyboardService = new KeyboardService();
-            VideoService videoService = new VideoService(false);
+            VideoService videoService = new VideoService(true);
            
             // create the script
             Script script = new Script();

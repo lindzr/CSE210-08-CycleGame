@@ -21,7 +21,7 @@ namespace Unit05.Game.Casting
         {
             SetText("@");
             SetColor(Constants.RED); 
-            // Reset();
+            //Reset();
         }
 
         /// <summary>
@@ -38,9 +38,9 @@ namespace Unit05.Game.Casting
             return points2;
         }
 
-        /// <summary>
-        /// Selects a random position and points that the food is worth.
-        /// </summary>
+        // <summary>
+        // Selects a random position and points that the food is worth.
+        // </summary>
         // public void Reset()
         // {
         //     Random random = new Random();
